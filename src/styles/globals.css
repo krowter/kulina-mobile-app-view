@@ -1,0 +1,20 @@
+/* RESETS AND DEFAULTS */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+* {
+  font-family: "Open Sans", sans-serif !important;
+}
+
+/* SITEWIDE */
+
+.container {
+  background-color: red;
+  max-width: 375px;
+  padding: 0.5rem;
+}
