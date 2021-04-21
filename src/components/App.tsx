@@ -1,5 +1,6 @@
 import React from "react";
 
+import { Navbar } from "./NavBar";
 import { FoodItemCard } from "./FoodItemCard";
 
 import foodItems from "../data/staticFoodItems.json";
@@ -9,6 +10,7 @@ const App: React.FC = (): any => {
 
   return (
     <main className="container">
+      <Navbar />
       {foodItems.map((food) => (
         <FoodItemCard key={food.product_id} food={food} />
       ))}

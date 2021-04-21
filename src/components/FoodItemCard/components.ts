@@ -25,12 +25,7 @@ export const CardTitle = styled.h3`
   margin: ${({ theme }) => theme.spacer[2]} 0;
 `;
 
-export const RatingWrapper = styled.div`
-  align-items: center;
-  display: flex;
-`;
-
-export const Flex = styled.div`
+export const BrandWrapper = styled.div`
   color: ${({ theme }) => theme.color.darkgrey};
   font-size: ${({ theme }) => theme.fontSize.base};
   display: flex;

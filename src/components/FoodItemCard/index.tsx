@@ -2,14 +2,14 @@ import React from "react";
 
 import {
   AddToCardButton,
-  Flex,
   Card,
   CardInfo,
   CardTitle,
   CardFooter,
-  RatingWrapper,
+  BrandWrapper,
 } from "./components";
-import { Rating } from "./../bases/Rating";
+import { Flex } from "../bases/Flex";
+import { Rating } from "../blocks/Rating";
 
 import { CURRENCY } from "../../data/site";
 import { FoodItem } from "../../types";
@@ -21,14 +21,14 @@ export const FoodItemCard: React.FC<FoodItemsCardProps> = ({ food }) => {
     <Card>
       <img src={food.thumbnail} />
       <CardInfo>
-        <RatingWrapper>
+        <Flex>
           {food.rating.toFixed(1)}
           <Rating rating={food.rating} />
-        </RatingWrapper>
-        <CardTitle>{food.product_name}</CardTitle>
-        <Flex>
-          <span>by Kulina &bull; {food.brand_name}</span>
         </Flex>
+        <CardTitle>{food.product_name}</CardTitle>
+        <BrandWrapper>
+          <span>by Kulina &bull; {food.brand_name}</span>
+        </BrandWrapper>
         <CardFooter>
           <span>
             {CURRENCY} {food.final_price.toLocaleString()}
