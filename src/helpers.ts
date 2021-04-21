@@ -10,3 +10,13 @@ export const segmentNumber = (num: number, range = 0.25) => {
 
   return { integer, float };
 };
+
+export const formatTime = (date: string, options: any) => {
+  const formatter = Intl.DateTimeFormat("id", {
+    weekday: "short",
+    day: "numeric",
+    ...options,
+  });
+
+  return formatter.format(new Date(date));
+};
