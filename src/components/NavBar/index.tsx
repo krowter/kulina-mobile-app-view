@@ -1,11 +1,14 @@
 import React from "react";
 
+import { NavbarWrapper } from "./components";
 import { LocationBar } from "./Location";
+import { Dates } from "./Dates";
 
 export const Navbar = () => {
   return (
-    <div>
+    <NavbarWrapper>
       <LocationBar location="Toko kelontongpedia" />
-    </div>
+      <Dates />
+    </NavbarWrapper>
   );
 };
