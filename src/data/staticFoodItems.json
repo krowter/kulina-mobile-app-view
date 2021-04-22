@@ -5,7 +5,8 @@
     "final_price": 32500,
     "brand_name": "Fitme Express",
     "thumbnail": "https://kln.imgix.net/production/0162e250bff7db547fb97d150f62dccc__Fried__Chicken.jpg?w=300",
-    "rating": 4.068120005534852
+    "rating": 4.068120005534852,
+    "type": "DINNER"
   },
   {
     "product_id": 6430,
@@ -13,7 +14,8 @@
     "final_price": 39000,
     "brand_name": "Belle Amie",
     "thumbnail": "https://kln.imgix.net/production/aglio-olio-fettuccine-1.jpg?w=300",
-    "rating": 3.2660303555834616
+    "rating": 3.2660303555834616,
+    "type": "DINNER"
   },
   {
     "product_id": 6433,
@@ -21,7 +23,8 @@
     "final_price": 39000,
     "brand_name": "Belle Amie",
     "thumbnail": "https://kln.imgix.net/production/aglio-olio-spaghetti.jpg?w=300",
-    "rating": 4.7311831630154
+    "rating": 4.7311831630154,
+    "type": "LUNCH"
   },
   {
     "product_id": 8741,
@@ -29,7 +32,8 @@
     "final_price": 39000,
     "brand_name": "Belle Amie",
     "thumbnail": "https://kln.imgix.net/production/0d148b7710271e16f2bfdd6035560855_28b5279e1ec6-19_08_13_11_29_02_550_deco.jpg?w=300",
-    "rating": 4.307972514019582
+    "rating": 4.307972514019582,
+    "type": "DINNER"
   },
   {
     "product_id": 4975,
@@ -37,7 +41,8 @@
     "final_price": 38500,
     "brand_name": "Sushiya",
     "thumbnail": "https://kln.imgix.net/production/ayaka-nagasaki-nagoya-sushiya.jpeg?w=300",
-    "rating": 4.463932217676536
+    "rating": 4.463932217676536,
+    "type": "DINNER"
   },
   {
     "product_id": 4880,
@@ -45,7 +50,8 @@
     "final_price": 37000,
     "brand_name": "Kulina Chinese",
     "thumbnail": "https://kln.imgix.net/production/cd2ae86b4bc47c364092b8d2457dc3f8_Ayam_Asam_Manis.jpg?w=300",
-    "rating": 3.315586377330553
+    "rating": 3.315586377330553,
+    "type": "LUNCH"
   },
   {
     "product_id": 9598,
@@ -53,7 +59,8 @@
     "final_price": 51000,
     "brand_name": "Fitfut",
     "thumbnail": "https://kln.imgix.net/production/d605462c5f66a6f00144e0d4776d557a_Ayam_Asam_Manis.JPG?w=300",
-    "rating": 3.3918017457536553
+    "rating": 3.3918017457536553,
+    "type": "DINNER"
   },
   {
     "product_id": 6799,
@@ -61,7 +68,8 @@
     "final_price": 52000,
     "brand_name": "Kulina Chinese",
     "thumbnail": "https://kln.imgix.net/production/2b8ae8f525ac24642a9392f187a60857_Ayam_Asam_Manis_copy2.jpg?w=300",
-    "rating": 3.4836917292931884
+    "rating": 3.4836917292931884,
+    "type": "DINNER"
   },
   {
     "product_id": 4091,
@@ -69,7 +77,8 @@
     "final_price": 40000,
     "brand_name": "Sayurbox",
     "thumbnail": "https://kln.imgix.net/production/all-veggie-with-plum-dressing.jpg?w=300",
-    "rating": 4.3863343584687815
+    "rating": 4.3863343584687815,
+    "type": "LUNCH"
   },
   {
     "product_id": 5618,
@@ -77,7 +86,8 @@
     "final_price": 39000,
     "brand_name": "Belle Amie",
     "thumbnail": "https://kln.imgix.net/production/ayam-bakar-bumbu-padang-by-belle-amie.jpg?w=300",
-    "rating": 4.742295581473512
+    "rating": 4.742295581473512,
+    "type": "LUNCH"
   },
   {
     "product_id": 6198,
@@ -85,7 +95,8 @@
     "final_price": 38500,
     "brand_name": "Terrace Catering",
     "thumbnail": "https://kln.imgix.net/production/ayam-bakar-bumbu-padang-sambal-hijau-segar-daun-singkong-rebus-bakwan-jagung-nasi-putih.jpeg?w=300",
-    "rating": 3.2837403510975527
+    "rating": 3.2837403510975527,
+    "type": "LUNCH"
   },
   {
     "product_id": 4807,
@@ -93,7 +104,8 @@
     "final_price": 31000,
     "brand_name": "Dapur Sana Sini",
     "thumbnail": "https://kln.imgix.net/production/ayam-suwir-sambal-matah.jpeg?w=300",
-    "rating": 3.3372742687120107
+    "rating": 3.3372742687120107,
+    "type": "DINNER"
   },
   {
     "product_id": 7834,
@@ -101,7 +113,8 @@
     "final_price": 38000,
     "brand_name": "Rumamama Manado",
     "thumbnail": "https://kln.imgix.net/production/ed178defb83b8d9e22293610ab1eafa7_Ayam_Tinoransak.jpg?w=300",
-    "rating": 4.560086437307192
+    "rating": 4.560086437307192,
+    "type": "LUNCH"
   },
   {
     "product_id": 7831,
@@ -109,7 +122,8 @@
     "final_price": 38000,
     "brand_name": "Rumamama Manado",
     "thumbnail": "https://kln.imgix.net/production/1fbf48c2b1cebf2b2983b65c31222010_Ayam_Woku.jpg?w=300",
-    "rating": 3.8107229577093356
+    "rating": 3.8107229577093356,
+    "type": "DINNER"
   },
   {
     "product_id": 9432,
@@ -117,7 +131,8 @@
     "final_price": 51000,
     "brand_name": "Fitfut",
     "thumbnail": "https://kln.imgix.net/production/d2181407380e98200d8c0a61301174a6_Ayam_Yakiniku.JPG?w=300",
-    "rating": 3.089317719553036
+    "rating": 3.089317719553036,
+    "type": "LUNCH"
   },
   {
     "product_id": 8969,
@@ -125,7 +140,8 @@
     "final_price": 25000,
     "brand_name": "Easy Peasy",
     "thumbnail": "https://kln.imgix.net/production/83265d1a9c5683c093a702c336a6bead_meal-box-place-holder-kulina.jpg?w=300",
-    "rating": 4.999718326485737
+    "rating": 4.999718326485737,
+    "type": "LUNCH"
   },
   {
     "product_id": 9427,
@@ -133,7 +149,8 @@
     "final_price": 32500,
     "brand_name": "Sukma Catering",
     "thumbnail": "https://kln.imgix.net/production/c6c72514a18383fcb985c3e1d143fa80_meal-box-place-holder-kulina.jpg?w=300",
-    "rating": 4.368223037314503
+    "rating": 4.368223037314503,
+    "type": "LUNCH"
   },
   {
     "product_id": 8917,
@@ -141,7 +158,8 @@
     "final_price": 47500,
     "brand_name": "Fitfut",
     "thumbnail": "https://kln.imgix.net/production/1bbdfd8a80d4edfb7c163e0a0a636d6d_Ayam_Mongolian.JPG?w=300",
-    "rating": 4.265020118310278
+    "rating": 4.265020118310278,
+    "type": "DINNER"
   },
   {
     "product_id": 5215,
@@ -149,7 +167,8 @@
     "final_price": 31000,
     "brand_name": "Dapur Sana Sini",
     "thumbnail": "https://kln.imgix.net/production/ayam-penyet.jpeg?w=300",
-    "rating": 4.853972885303845
+    "rating": 4.853972885303845,
+    "type": "DINNER"
   },
   {
     "product_id": 10035,
@@ -157,6 +176,7 @@
     "final_price": 28500,
     "brand_name": "Gege Ayam Penyet",
     "thumbnail": "https://kln.imgix.net/production/4577e36d0c47f85c27281270de4254ad_gege_ayam_penyet.jpeg?w=300",
-    "rating": 4.591756469673289
+    "rating": 4.591756469673289,
+    "type": "LUNCH"
   }
 ]
