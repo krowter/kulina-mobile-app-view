@@ -12,6 +12,7 @@
     "@svgr/webpack": "^5.5.0",
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.3",
+    "@types/react-redux": "^7.1.16",
     "@types/styled-components": "^5.1.9",
     "css-loader": "^5.2.4",
     "html-webpack-plugin": "^5.3.1",
@@ -25,6 +26,8 @@
   "dependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-redux": "^7.2.3",
+    "redux": "^4.0.5",
     "styled-components": "^5.2.3"
   }
 }

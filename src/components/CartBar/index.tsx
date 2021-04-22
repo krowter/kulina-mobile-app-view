@@ -1,11 +1,11 @@
 import React from "react";
+
 import {
   CartBar as Bar,
   PriceInfo,
   ShippingCost,
   CartUnderLayer,
 } from "./components";
-
 import CartIcon from "../../static/icons/cart.svg";
 import ChevronRight from "../../static/icons/chevron-right.svg";
 
