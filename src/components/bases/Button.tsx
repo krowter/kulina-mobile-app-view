@@ -9,6 +9,8 @@ export const Button = styled.button<{
     isActive ? theme.color.light : theme.color.darkgrey};
   border: none;
 
+  cursor: pointer;
+
   &:focus {
     background: ${({ theme }) => theme.color.darkgrey};
     color: ${({ theme }) => theme.color.light};
