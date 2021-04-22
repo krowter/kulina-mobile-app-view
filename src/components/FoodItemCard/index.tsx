@@ -13,7 +13,7 @@ import {
 import { Flex } from "../bases/Flex";
 import { Rating } from "../blocks/Rating";
 
-import { CartAction } from "../../redux/actions/constants";
+import { addToCart, removeFromCart } from "../../redux/actions/cart";
 
 import { CURRENCY } from "../../data/site";
 import { FoodItem } from "../../types";
@@ -70,10 +70,8 @@ const mapStateToProps = (state: any) => ({
 });
 
 const mapDispatchToProps = (dispatch: any) => ({
-  addToCart: (item: FoodItem) =>
-    dispatch({ type: CartAction.ADD_TO_CART, payload: { item } }),
-  removeFromCart: (item: FoodItem) =>
-    dispatch({ type: CartAction.REMOVE_FROM_CART, payload: { item } }),
+  addToCart: (item: FoodItem) => dispatch(addToCart(item)),
+  removeFromCart: (item: FoodItem) => dispatch(removeFromCart(item)),
 });
 
 export const FoodItemCard = connect(
