@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const GroupedButtonContainer = styled.div`
   margin-top: ${({ theme }) => theme.spacer[4]};
-
+  
   button {
     border: none;
     font-weight: bold;
