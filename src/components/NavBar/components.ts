@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const NavbarWrapper = styled.nav`
-  height: 6rem;
+  height: 9rem;
   background: ${({ theme }) => theme.color.light};
   max-width: 375px; //width of container
   padding: ${({ theme }) => theme.spacer[6]} 0;

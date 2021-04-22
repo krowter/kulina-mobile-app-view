@@ -1,10 +1,9 @@
 import styled from "styled-components";
-import { CircularButton } from "../bases/CircularButton";
+import { Button } from "../bases/Button";
 
-export const CircularDate = styled(CircularButton)<{
-  isActive: boolean;
-}>`
+export const CircularDate = styled(Button)`
   flex-basis: 1 1 0;
+  border-radius: 50%;
   box-sizing: content-box;
   margin: ${({ theme }) => theme.spacer[2]};
   min-height: 40px;
