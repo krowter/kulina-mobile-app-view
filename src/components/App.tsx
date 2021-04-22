@@ -1,5 +1,6 @@
 import React from "react";
 
+import { CartBar } from "./CartBar";
 import { Navbar } from "./NavBar";
 import { FoodItemCard } from "./FoodItemCard";
 import { FoodItemsContainer } from "./FoodItemCard/Container";
@@ -17,6 +18,7 @@ const App: React.FC = (): any => {
           <FoodItemCard key={food.product_id} food={food} />
         ))}
       </FoodItemsContainer>
+      <CartBar />
     </main>
   );
 };

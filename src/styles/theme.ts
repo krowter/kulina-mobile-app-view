@@ -21,7 +21,7 @@ export const spacer = {
 
 export const color = {
   primary: "#f9234a",
-  secondary: "#a23550",
+  secondary: "#a23530",
   darkgrey: "#424749",
   grey: "#6e7679",
   lightgrey: "#e2e4e4",
