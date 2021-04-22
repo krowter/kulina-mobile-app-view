@@ -2,6 +2,8 @@
 
 This repo contains the mobile view page based on given designs using ReactJS.
 
+![app preview](./assets/preview.gif)
+
 ## Tech Stack
 
 TypeScript, React, Styled-component, Redux, Webpack
