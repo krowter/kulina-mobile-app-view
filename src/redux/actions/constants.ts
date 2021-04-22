@@ -7,3 +7,7 @@ export enum CategoryAction {
   SWITCH_TYPE = "SWITCH_TYPE",
   CHANGE_DATE = "CHANGE_DATE",
 }
+
+export enum LocationAction {
+  CHANGE_LOCATION = "CHANGE_LOCATION",
+}

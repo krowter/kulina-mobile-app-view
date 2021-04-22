@@ -8,7 +8,7 @@ import { Switcher } from "./Switcher";
 export const Navbar = () => {
   return (
     <NavbarWrapper>
-      <LocationBar location="Toko kelontongpedia" />
+      <LocationBar />
       <Dates />
       <Switcher />
     </NavbarWrapper>
