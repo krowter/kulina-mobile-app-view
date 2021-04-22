@@ -16,7 +16,7 @@ import { changeLocation, setIsModalOpen } from "../../redux/actions/location";
 import LocationPin from "../../static/icons/location-pin.svg";
 import CloseIcon from "../../static/icons/close.svg";
 
-type LocationModalProps = LocationState & {
+type LocationModalProps = Omit<LocationState, "location"> & {
   changeLocation: (location: string) => void;
   setIsModalOpen: (isOpen: boolean) => void;
 };
