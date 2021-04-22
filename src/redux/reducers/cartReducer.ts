@@ -5,6 +5,8 @@ interface State {
   items: FoodItem[];
 }
 
+export { State as CartState };
+
 interface Action {
   type: CartAction;
   payload: {
@@ -19,13 +21,14 @@ const initialState: State = {
 export const CartReducer = (state = initialState, action: Action) => {
   switch (action.type) {
     case CartAction.REMOVE_FROM_CART:
+      const index = state.items.findIndex(
+        (item) => item.product_id == action.payload.item.product_id
+      );
       return {
         ...state,
-        items: state.items.filter(
-          (item) => item.product_id !== action.payload.item.product_id
-        ),
+        items: state.items.filter((_, i) => i !== index),
       };
-    case CartAction.REMOVE_FROM_CART:
+    case CartAction.ADD_TO_CART:
       return {
         ...state,
         items: [...state.items, action.payload.item],

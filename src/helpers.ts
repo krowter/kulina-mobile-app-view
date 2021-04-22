@@ -1,3 +1,5 @@
+import { FoodItem } from "./types";
+
 export const segmentNumber = (num: number, range = 0.25) => {
   const integer = Math.floor(num);
   let float = num - integer;
@@ -19,4 +21,8 @@ export const formatTime = (date: string, options: any) => {
   });
 
   return formatter.format(new Date(date));
+};
+
+export const getTotalPrice = (items: FoodItem[]) => {
+  return items.reduce((sum, item) => sum + item.final_price, 0);
 };

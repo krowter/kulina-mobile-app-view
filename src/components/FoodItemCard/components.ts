@@ -38,7 +38,7 @@ export const CardFooter = styled.div`
   width: 100%;
 `;
 
-export const AddToCardButton = styled.button`
+export const AddToCartButton = styled.button`
   background: ${({ theme }) => theme.color.primary};
   border: none;
   border-radius: 0.5rem;
@@ -46,4 +46,8 @@ export const AddToCardButton = styled.button`
   font-weight: bold;
   font-size: ${({ theme }) => theme.fontSize.big};
   padding: ${({ theme }) => theme.spacer[4] + " " + theme.spacer[8]};
+`;
+
+export const RemoveFromCartButton = styled(AddToCartButton)`
+  background: ${({ theme }) => theme.color.grey};
 `;

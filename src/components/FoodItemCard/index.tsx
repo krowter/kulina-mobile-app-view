@@ -1,22 +1,40 @@
 import React from "react";
+import { connect } from "react-redux";
 
 import {
-  AddToCardButton,
+  AddToCartButton,
   Card,
   CardInfo,
   CardTitle,
   CardFooter,
   BrandWrapper,
+  RemoveFromCartButton,
 } from "./components";
 import { Flex } from "../bases/Flex";
 import { Rating } from "../blocks/Rating";
 
+import { CartAction } from "../../redux/actions/constants";
+
 import { CURRENCY } from "../../data/site";
 import { FoodItem } from "../../types";
 
-type FoodItemsCardProps = { food: FoodItem };
+interface FoodItemsCardProps {
+  food: FoodItem;
+  items: FoodItem[];
+  addToCart: (item: FoodItem) => void;
+  removeFromCart: (item: FoodItem) => void;
+}
 
-export const FoodItemCard: React.FC<FoodItemsCardProps> = ({ food }) => {
+const _FoodItemCard: React.FC<FoodItemsCardProps> = ({
+  food,
+  items,
+  addToCart,
+  removeFromCart,
+}) => {
+  const showRemoveButton = items.some(
+    (item) => item.product_id === food.product_id
+  );
+
   return (
     <Card>
       <img src={food.thumbnail} />
@@ -33,9 +51,32 @@ export const FoodItemCard: React.FC<FoodItemsCardProps> = ({ food }) => {
           <span>
             {CURRENCY} {food.final_price.toLocaleString()}
           </span>
-          <AddToCardButton>ADD +</AddToCardButton>
+          {showRemoveButton && (
+            <RemoveFromCartButton onClick={() => removeFromCart(food)}>
+              TAKE --
+            </RemoveFromCartButton>
+          )}
+          <AddToCartButton onClick={() => addToCart(food)}>
+            ADD +
+          </AddToCartButton>
         </CardFooter>
       </CardInfo>
     </Card>
   );
 };
+
+const mapStateToProps = (state: any) => ({
+  items: state.CartReducer.items,
+});
+
+const mapDispatchToProps = (dispatch: any) => ({
+  addToCart: (item: FoodItem) =>
+    dispatch({ type: CartAction.ADD_TO_CART, payload: { item } }),
+  removeFromCart: (item: FoodItem) =>
+    dispatch({ type: CartAction.REMOVE_FROM_CART, payload: { item } }),
+});
+
+export const FoodItemCard = connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(_FoodItemCard);

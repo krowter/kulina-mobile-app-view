@@ -1,4 +1,5 @@
 import React from "react";
+import { connect } from "react-redux";
 
 import {
   CartBar as Bar,
@@ -9,15 +10,19 @@ import {
 import CartIcon from "../../static/icons/cart.svg";
 import ChevronRight from "../../static/icons/chevron-right.svg";
 
+import { getTotalPrice } from "../../helpers";
+
 import { CURRENCY } from "../../data/site";
 import { FoodItem } from "../../types";
 
-export const CartBar: React.FC<{ items: FoodItem[] }> = ({}) => {
-  const items = [1, 2, 3];
+interface CartBarProps {
+  items: FoodItem[];
+}
 
-  const totalPrice = 125000;
+const _CartBar: React.FC<CartBarProps> = ({ items }) => {
+  const totalPrice = getTotalPrice(items);
 
-  return (
+  return items.length > 0 ? (
     <>
       <CartUnderLayer />
       <Bar>
@@ -33,5 +38,11 @@ export const CartBar: React.FC<{ items: FoodItem[] }> = ({}) => {
         </div>
       </Bar>
     </>
-  );
+  ) : null;
 };
+
+const mapStateToProps = (state: any) => ({
+  items: state.CartReducer.items,
+});
+
+export const CartBar = connect(mapStateToProps)(_CartBar);
