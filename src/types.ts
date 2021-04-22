@@ -6,3 +6,5 @@ export interface FoodItem {
   brand_name: string;
   thumbnail: string;
 }
+
+export type FoodType = "LUNCH" | "DINNER";

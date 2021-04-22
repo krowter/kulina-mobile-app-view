@@ -26,3 +26,8 @@ export const formatTime = (date: string, options: any) => {
 export const getTotalPrice = (items: FoodItem[]) => {
   return items.reduce((sum, item) => sum + item.final_price, 0);
 };
+
+export const isSameDay = (d1: Date, d2: Date) =>
+  d1.getFullYear() === d2.getFullYear() &&
+  d1.getMonth() === d2.getMonth() &&
+  d1.getDate() === d2.getDate();
