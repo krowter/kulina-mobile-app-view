@@ -15,6 +15,12 @@ export const Modal = styled.section`
 
 export const ModalTitle = styled.h2``;
 
+export const CloseIconWrapper = styled.button`
+  float: right;
+  background: transparent;
+  border: none;
+`;
+
 export const InputWrapper = styled.div`
   align-items: center;
   border: 1px solid ${({ theme }) => theme.color.grey};

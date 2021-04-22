@@ -10,4 +10,5 @@ export enum CategoryAction {
 
 export enum LocationAction {
   CHANGE_LOCATION = "CHANGE_LOCATION",
+  SET_MODAL_VISIBILITY = "SET_MODAL_VISIBILITY",
 }

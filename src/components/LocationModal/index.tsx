@@ -2,23 +2,31 @@ import React, { useState } from "react";
 import { connect } from "react-redux";
 
 import { Input } from "../bases/Input";
-import { Modal, ModalTitle, InputWrapper, Suggestion } from "./components";
+import {
+  Modal,
+  ModalTitle,
+  InputWrapper,
+  Suggestion,
+  CloseIconWrapper,
+} from "./components";
 
 import { LocationState } from "../../redux/reducers/locationReducer";
-import { changeLocation } from "../../redux/actions/location";
+import { changeLocation, setIsModalOpen } from "../../redux/actions/location";
 
 import LocationPin from "../../static/icons/location-pin.svg";
+import CloseIcon from "../../static/icons/close.svg";
 
 type LocationModalProps = LocationState & {
   changeLocation: (location: string) => void;
+  setIsModalOpen: (isOpen: boolean) => void;
 };
 
 export const _LocationModal = ({
-  location,
   suggestions,
   changeLocation,
+  setIsModalOpen,
 }: LocationModalProps) => {
-  const [userLocationInput, setUserLocationInput] = useState(location);
+  const [userLocationInput, setUserLocationInput] = useState("");
 
   const handleIinputChange = (location: string) => {
     changeLocation(location);
@@ -26,6 +34,9 @@ export const _LocationModal = ({
   };
   return (
     <Modal>
+      <CloseIconWrapper onClick={() => setIsModalOpen(false)}>
+        <CloseIcon />
+      </CloseIconWrapper>
       <ModalTitle>Cek makanan yang tersedia di lokasi kamu!</ModalTitle>
       <InputWrapper>
         <LocationPin />
@@ -46,11 +57,13 @@ export const _LocationModal = ({
 };
 
 const mapStateToProps = (state: any) => ({
-  ...state.LocationReducer,
+  suggestions: state.LocationReducer.suggestions,
+  isModalOpen: state.LocationReducer.isModalOpen,
 });
 
 const mapDispatchToProps = (dispatch: any) => ({
   changeLocation: (location: string) => dispatch(changeLocation(location)),
+  setIsModalOpen: (isOpen: boolean) => dispatch(setIsModalOpen(isOpen)),
 });
 
 export const LocationModal = connect(

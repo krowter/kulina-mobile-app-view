@@ -3,6 +3,7 @@ import { LocationAction } from "../actions/constants";
 interface State {
   location: string;
   suggestions: string[];
+  isModalOpen: boolean;
 }
 
 export { State as LocationState };
@@ -10,7 +11,8 @@ export { State as LocationState };
 interface Action {
   type: LocationAction;
   payload: {
-    location: string;
+    location?: string;
+    isModalOpen?: boolean;
   };
 }
 
@@ -26,6 +28,7 @@ const initialState = {
     "38447 Buford Motorway",
     "6575 Garrick Island",
   ],
+  isModalOpen: false,
 };
 
 export const LocationReducer = (state = initialState, action: Action) => {
@@ -34,6 +37,11 @@ export const LocationReducer = (state = initialState, action: Action) => {
       return {
         ...state,
         location: action.payload.location,
+      };
+    case LocationAction.SET_MODAL_VISIBILITY:
+      return {
+        ...state,
+        isModalOpen: action.payload.isModalOpen,
       };
     default:
       return state;

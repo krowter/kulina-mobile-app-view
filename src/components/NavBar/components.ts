@@ -13,6 +13,7 @@ export const LocationTitle = styled.span`
   display: block;
   font-size: ${({ theme }) => theme.fontSize.base};
 `;
+
 export const Location = styled.span`
   align-items: center;
   display: flex;
@@ -22,6 +23,11 @@ export const Location = styled.span`
   span {
     margin-right: ${({ theme }) => theme.spacer[4]};
   }
+`;
+
+export const ExpandMoreWrapper = styled.button`
+  border: none;
+  background: transparent;
 `;
 export const LocationWrapper = styled.div`
   margin-left: ${({ theme }) => theme.spacer[6]};
